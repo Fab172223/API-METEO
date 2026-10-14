@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/meteo")
 public class MeteoController{
 
-    MeteoService meteoService;
+   private final MeteoService meteoService;
 
     public MeteoController(MeteoService meteoService){
         this.meteoService = meteoService;

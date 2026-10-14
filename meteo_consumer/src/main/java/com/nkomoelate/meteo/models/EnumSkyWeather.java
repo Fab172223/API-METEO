@@ -20,16 +20,16 @@ public enum EnumSkyWeather {
         return this.label;
     }
 
-    public static EnumSkyWeather getLabelFromCode(Integer code){
+    public static EnumSkyWeather fromCode(Integer code){
        return switch(code){
            case 0 -> CLEAR;
            case 1,2,3 -> CLOUDY;
            case 45,48 -> FOG;
            case 51,53,55,56,57 -> DRIZZLE;
            case 61,63,65,66,67,80,81,82 -> RAIN;
-           case 71,73,75,77,85,76 -> SNOW;
+           case 71,73,75,77,85,76,86 -> SNOW;
            case 95,96,99 -> STORM;
-           default -> UNKNOWN;
+           case null,default -> UNKNOWN;
        };
     }
 }

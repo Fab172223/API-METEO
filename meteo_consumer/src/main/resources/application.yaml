@@ -1,3 +1,9 @@
 spring:
   application:
     name: ConsumerApplication
+
+openmeteo:
+  geocoding:
+    base-url: https://geocoding-api.open-meteo.com
+  forecast:
+    base-url: https://api.open-meteo.comurl=https://api.open-meteo.com

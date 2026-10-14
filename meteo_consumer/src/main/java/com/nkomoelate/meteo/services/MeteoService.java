@@ -35,7 +35,7 @@ public class MeteoService {
             weather.setPrecipitation(daily.precipitation().get(i));
             weather.setTemperatureMax(daily.temperatureMax().get(i));
             weather.setWindSpeed(daily.windSpeed().get(i));
-            weather.setCondition(EnumSkyWeather.getLabelFromCode(daily.weatherCode().get(i)));
+            weather.setCondition(EnumSkyWeather.fromCode(daily.weatherCode().get(i)));
             weathers.add(weather);
         }
         return weathers;
