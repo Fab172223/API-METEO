@@ -6,4 +6,7 @@ openmeteo:
   geocoding:
     base-url: https://geocoding-api.open-meteo.com
   forecast:
-    base-url: https://api.open-meteo.comurl=https://api.open-meteo.com
+    base-url: https://api.open-meteo.com
+
+meteoweb:
+  base-url: http://localhost:4200
